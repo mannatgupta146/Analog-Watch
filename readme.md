@@ -30,5 +30,5 @@ You can easily customize the clock's appearance and functionality:
 ## Contributing
 Feel free to fork this repository, make improvements, or open issues for suggestions. Contributions are welcome!
 
----
+----
 Enjoy your Analog Watch!
