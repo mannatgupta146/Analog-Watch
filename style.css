@@ -1,0 +1,136 @@
+body {
+	margin: 0;
+	background: linear-gradient(135deg, #2c3e50, #1a2a33);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px; 
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.container {
+	position: relative;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	border: 6px solid rgba(255, 255, 255, 0.15);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+	background: radial-gradient(circle, #1c2a35, #000);
+	transform: rotate(-90deg);
+	overflow: hidden;
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+.time {
+	position: absolute;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.85);
+	transform: rotate(90deg); 
+}
+  
+.time-12{
+	top:50%;
+	right:0%;
+	margin-top: -10px;
+}
+
+.time-3{
+	bottom:0%;
+	left:50%;
+	margin-left: -4px;
+}
+.time-6{
+	top:50%;
+	left:0%;
+	margin-top: -8px;
+	margin-left: 4px;
+}
+
+.time-9{
+	top:0%;
+	left:50%;
+	margin-left: -4px;
+}
+  
+ 
+.line {
+	position: absolute;
+	width: 50%;
+	height: 4px;
+	background: rgba(255, 255, 255, 0.85);
+	border-radius: 2px;
+	top: 50%;
+	left: 50%;
+	transform-origin: 0% 50%; /* Pivot point at the center */
+	transition: transform 0.1s linear;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+  
+  #seconds {
+	background: #e74c3c;
+	height: 2px;
+	width: 55%;
+	z-index: 3;
+  }
+  
+  #minutes {
+	background: #3498db;
+	width: 50%;
+	z-index: 2;
+  }
+  
+  #hours {
+	background: #2ecc71;
+	width: 35%;
+	z-index: 1;
+  }
+  
+  .mid {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: radial-gradient(circle, #ffffff, #dcdcdc);
+	border: 2px solid #333;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+	z-index: 10;
+  }
+  
+  .line:hover {
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  .time:hover {
+	text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+  }
+  
+  .container {
+	animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	  transform: scale(0.8) rotate(-90deg);
+	}
+	to {
+	  opacity: 1;
+	  transform: scale(1) rotate(-90deg);
+	}
+  }
+  
